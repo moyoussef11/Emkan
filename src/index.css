@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .title {
+    @apply text-3xl font-bold text-[#3A3772] text-center my-2;
+  }
+  .navLinks {
+    @apply hover:text-[#232349];
+  }
+  .mainPadding {
+    @apply px-10 md:px-20;
+  }
+  .mainAfter {
+    @apply after:content-[''] after:w-full after:h-5 after:absolute after:left-0 after:-mt-5 after:border-[#33BCBB] after:border-l-emerald-50 after:border-e-emerald-50 after:border-8;
+  }
+  .labelText {
+    @apply font-bold my-2;
+  }
+  .inputs {
+    @apply placeholder:text-right text-right h-10 rounded-lg bg-[#EBF4F8] p-2 focus:outline-[#80BED5];
+  }
+}
